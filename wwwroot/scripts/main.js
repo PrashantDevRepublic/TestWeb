@@ -8,7 +8,7 @@ const scroller = new LocomotiveScroll({
   smooth: true,
   smartphone: {
     smooth: false,
-    breakpoint: 767
+    breakpoint: 7673
     },
     tablet: {
         smooth: true,
