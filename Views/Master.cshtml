@@ -1,0 +1,247 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Devrepublic</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
+
+</head>
+<body>
+ <div class="wrapper" data-scroll-container>
+        
+
+        <!-- Header start -->
+        <header class="site-header px-40" data-scroll>
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Logo start -->
+                <div class="logo">
+                    <a href="" class="d-flex align-items-center">
+                        	@{
+                            var image = Model.Value<MediaWithCrops>("devRepublicLogo");
+                            <img src="@image.MediaUrl()" alt="" width="" height="" class="logo-icon" />
+                            }
+                        
+                        <img src="images/devrepublic-text-white.svg" alt="" width="" height="" class="logo-text" />
+                    </a>
+                </div>
+                <!-- Logo end -->
+
+                <!-- Location div start -->
+                <div class="locDiv d-none d-md-flex align-items-center text-light-gray">
+
+                    <div class="d-flex align-items-center">
+                        <div class="overflow-hidden position-relative dpk-hover" data-hover-class="noCursor">
+                            <a class="caption" href="#">Bel de Zwolse collega's</a>
+                            <a class="caption" href="#">Zwolle, Nederland <strong>09.42h</strong></a>
+                        </div>    
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="overflow-hidden position-relative dpk-hover" data-hover-class="noCursor">
+                            <a class="caption" href="#">Neem contact op</a>
+                            <a class="caption" href="#">Ahmedabad, India <strong>15.42h</strong></a>
+                        </div>    
+                    </div>
+
+                </div>
+                <!-- Location div end -->
+
+                <!-- Navigation start -->
+                <div class="d-flex align-items-center">
+                    <!-- Dropdown menu start -->
+                    <div class="menuBox">
+                        <button class="btn-trans-gray btn-trans-gray-hover-orange d-inline-flex align-items-center dpk-hover" data-hover-class="noCursor"  id="menuButton">
+                            <i class="linesMain">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </i>
+                            <span class="ps-5px">Menu</span>
+                        </button>
+
+                        <div class="menuDiv d-flex flex-column">
+
+                            <div class="menuBg"></div>
+
+                            <div class="text-end">
+                                <button class="menuClose dpk-hover" data-hover-class="mixBlend"><span>Close</span></button>
+                            </div>
+
+                            <nav class="navigation">
+                                <ul>
+                                    <li>
+                                        <a href="" class="dpk-hover" data-hover-class="mixBlend" data-before="Services"><span>Services</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dpk-hover" data-hover-class="mixBlend" data-before="Cases"><span>Cases</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dpk-hover" data-hover-class="mixBlend" data-before="Stories"><span>Stories</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dpk-hover" data-hover-class="mixBlend" data-before="Over DevRepublic"><span>Over DevRepublic</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dpk-hover" data-hover-class="mixBlend" data-before="Actueel"><span>Actueel</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="dpk-hover" data-hover-class="mixBlend" data-before="Contact"><span>Contact</span></a>
+                                    </li>
+                                </ul>
+                            </nav>
+
+                            <div class="d-flex mt-auto align-items-end justify-content-between">
+
+                                <a href="" class="btn-secondary btn-secondary-small text-decoration-none dpk-hover" data-hover-class="noCursor">
+                                    <span>info@devrepublic.nl</span>
+                                    <i></i>
+                                </a>
+
+                                <div class="d-flex flex-column align-items-start">
+                                    <a href="" class="btn-secondary btn-secondary-small mb-2 dpk-hover" data-hover-class="noCursor">
+                                        <span>Facebook</span>
+                                        <i></i>
+                                    </a>
+                                    <a href="" class="btn-secondary btn-secondary-small dpk-hover" data-hover-class="noCursor">
+                                        <span>LinkedIn</span>
+                                        <i></i>
+                                    </a>                 
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Dropdown menu end -->
+                    <button class="btn-primary px-8px ms-15px dpk-hover" data-hover-class="noCursor">contact</button>
+                </div>     
+
+            </div>
+        </header>
+        <!-- Header end -->
+
+@RenderBody()
+        <footer class="site-footer px-40 text-light-gray" data-scroll>
+            <!-- Footer top start -->
+            <div class="footerTop">
+
+                <div class="foLogo">
+                    <img src="images/devrepublic-text-white.svg" alt="" width="188" height="31" class="mw-100 h-auto">
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between foMiddle">
+
+                    <!-- Footer Tagline div start -->
+                    <div class="foTagline">
+                        <h2>Long headline on two lines to turn</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elineque. Nullam tincidunt mauris sed nibh vulputate.</p>
+                        <div class="isoDiv">
+                            <img src="images/iso-27001.svg" alt="" width="126" height="42" class="iso-27001" />
+                            <img src="images/iso-9001.svg" alt="" width="114" height="42" class="iso-9001" />
+                        </div>
+                    </div>
+                    <!-- Footer Tagline div end -->
+
+                    <!-- Footer menu start -->
+                    <div class="foMenu d-flex justify-content-between">
+                        <!-- Pagina's start -->
+                        <div>
+                            <h4>Pagina's</h4>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Cases</a></li>
+                                <li><a href="">Expertises</a></li>
+                                <li><a href="">Over ons</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <!-- Pagina's end -->
+
+                        <!-- Volg ons start -->
+                        <div>
+                            <h4>Volg ons</h4>
+                            <ul>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">LinkedIn</a></li>
+                            </ul>
+                        </div>
+                        <!-- Volg ons end -->
+
+                        <!-- Vestigingen start -->
+                        <div>
+                            <h4>Vestigingen</h4>
+                            <ul>
+                                <li>Zwolle, Nederland</li>
+                                <li>Ahmedabad, India</li>
+                            </ul>
+                        </div>
+                        <!-- Vestigingen end -->                        
+
+                    </div>
+                    <!-- Footer menu end -->
+
+                    <!-- Newsletter div start -->
+                    <div class="newsLetter">
+                        <h4>Blijf op de hoogte</h4>
+                        <p>Meld je aan voor de nieuwsbrief en blijf op de hoogte van ons laatste nieuws.</p>
+                        <div class="formBox">
+                            <div class="mb-7px ">
+                                <input type="text" placeholder="Jan Jansen" class="form-control" />
+                            </div>
+                            <div class="mb-18px">
+                                <input type="email" placeholder="janjansen@mail.com" class="form-control" />
+                            </div> 
+                            <div class="chkBox d-flex mb-16px">
+                                <input type="checkbox" id="privacystatement" name="privacystatement">
+                                <label for="privacystatement">Ik ga akkoord met het privacystatement</label>
+                            </div>     
+                            <div>
+                                <button type="submit" class="btn-primary dpk-hover" data-hover-class="noCursor">AANMELDEN</button>
+                            </div>                                                      
+                        </div>
+                    </div>
+                    <!-- Newsletter div end -->
+
+                </div>
+
+            </div>
+            <!-- Footer top end -->
+
+
+            <div class="copyRight caption">
+                &copy; <script>document.write(new Date().getFullYear())</script> DevRepublic <span>•</span> <a href="">Algemene voorwaarden</a> <span>•</span> <a href="">Privacy statement</a>
+            </div>
+
+        </footer>
+        
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js" integrity="sha512-omCJ8S/xl+DUjxNTqvhVSptHwIEi0IDp52n63HEj8ThJgSK/8Lcpi9btnTdE8db+Y4cDKZrZ7NQZBX4PKN4i4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/gh/Dushyant1295/dpkCursor/dpkCursor.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>

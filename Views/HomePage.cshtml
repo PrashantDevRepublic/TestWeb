@@ -1,0 +1,518 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Core.Models;
+@{
+	Layout = "Master.cshtml";
+}
+
+<section class="titleSec text-white" data-scroll>
+            <div class="px-40">
+
+                <div class="row mb-70px">
+                    <div class="col-md-6">
+                        <h1 class="title" data-text-split data-text-split-type="words, chars">Bridging excellence.</h1>
+                    </div>
+                    <div class="col-md-4 ms-auto">
+                        <p class="intro" data-text-split data-text-split-type="words, chars">Wij zijn DevRepublic. Met dedicated developmentteams ontwikkelen we software-oplossingen die problemen oplossen, efficiëntie verbeteren én innovatie stimuleren.</p>
+                        <a href="" class="btn-secondary dpk-hover hover-1" data-hover-class="noCursor">
+                            <span class="text-gray">Over ons</span>
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="multiLinks position-relative">
+                    <div class="borderShap h-100"></div>
+
+                    <div class="d-flex align-items-center justify-content-around">
+                        <a href="" data-hover-class="enlargeCursor" data-text-split data-text-split-type="words, chars" class="text-gray dpk-hover">Dedicated developmentteam</a>
+                        <a href="" data-hover-class="enlargeCursor" data-text-split data-text-split-type="words, chars" class="text-gray dpk-hover">Projectmanagement</a>
+                        <a href="" data-hover-class="enlargeCursor" data-text-split data-text-split-type="words, chars" class="text-gray dpk-hover">Architectuur</a>
+                        <a href="" data-hover-class="enlargeCursor" data-text-split data-text-split-type="words, chars" class="text-gray dpk-hover">Security</a>
+                        <a href="" data-hover-class="enlargeCursor" data-text-split data-text-split-type="words, chars" class="text-gray dpk-hover">Cloud management</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Full Image div start -->
+            <div class="w-100 position-relative" id="imgWrapper">
+                <img src="media/img-1.jpg" alt="" width="1440" height="635" class="w-100 h-auto" />
+                <div 
+                    class="outlineLogo position-absolute bottom-0 end-0" 
+                    data-scroll data-scroll-direction="horizontal" 
+                    data-scroll-speed="2" 
+                    data-scroll-target="#imgWrapper" 
+                    data-scroll-delay="0.05" 
+                    data-scroll-position="150"
+                >
+                        <img src="media/devrepublic-outline-text.svg" alt="" width="1209" height="131" class="h-auto dot-logo">
+                </div>
+            </div>
+            <!-- Full Image div end -->
+
+        </section>
+        <!-- Title section end -->
+   
+         
+        <!-- Accordian section start -->
+        <section class="px-40 bg-primary accordianSec text-gray" data-scroll>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="scrollAnimate">Hoe kunnen wij jou helpen? Lorem ipsum dolor sit amet consectetur adipiscing elit. Mauris erat nunc aliquet at nunc at vive.</h2>
+                </div>
+            </div>    
+
+
+            <div class="accGrid">
+
+                <div class="accSlot is--active" ser-slot="1">
+                    <div class="accItem ser-grid-item is--active">
+                        <div class="itemInner">
+                            <button class="pluseButton"></button>
+                            <h3>Dedicated developmentteam</h3>
+                            <div class="accInfo formatedUl">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul laboris quip ex ea commodo consequat. </p>
+                                <ul>
+                                    <li>Showcase and embed your work</li>
+                                    <li>Publish across social channels</li>
+                                    <li>Sell your videos worldwide</li>
+                                </ul>
+                                <a href="" class="btn-primary dpk-hover" data-hover-class="noCursor">Meer informatie</a>
+                            </div>    
+                        </div>
+                        <div class="accImg">
+                            <img src="media/img-2.jpg" alt="" width="665" height="212" class="w-100 h-100 object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accSlot" ser-slot="2">
+                    <div class="accItem ser-grid-item">
+                        <div class="itemInner">
+                            <button class="pluseButton"></button>
+                            <h3>Projectmanagement</h3>
+                            <div class="accInfo formatedUl">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul laboris quip ex ea commodo consequat. </p>
+                                <ul>
+                                    <li>Showcase and embed your work</li>
+                                    <li>Publish across social channels</li>
+                                    <li>Sell your videos worldwide</li>
+                                </ul>
+                                <a href="" class="btn-primary dpk-hover" data-hover-class="noCursor">Meer informatie</a>
+                            </div>    
+                        </div>
+                        <div class="accImg">
+                            <img src="media/img-2.jpg" alt="" width="665" height="212" class="w-100 h-100 object-cover">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accSlot" ser-slot="3">
+                    <div class="accItem ser-grid-item">
+                        <div class="itemInner">
+                            <button class="pluseButton"></button>
+                            <h3>Architectuur</h3>
+                            <div class="accInfo formatedUl">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul laboris quip ex ea commodo consequat. </p>
+                                <ul>
+                                    <li>Showcase and embed your work</li>
+                                    <li>Publish across social channels</li>
+                                    <li>Sell your videos worldwide</li>
+                                </ul>
+                                <a href="" class="btn-primary dpk-hover" data-hover-class="noCursor">Meer informatie</a>
+                            </div>    
+                        </div>
+                        <div class="accImg">
+                            <img src="media/img-2.jpg" alt="" width="665" height="212" class="w-100 h-100 object-cover">
+                        </div>
+                    </div>
+                </div>  
+                
+                <div class="accSlot" ser-slot="4">
+                    <div class="accItem ser-grid-item">
+                        <div class="itemInner">
+                            <button class="pluseButton"></button>
+                            <h3>Security</h3>
+                            <div class="accInfo formatedUl">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul laboris quip ex ea commodo consequat. </p>
+                                <ul>
+                                    <li>Showcase and embed your work</li>
+                                    <li>Publish across social channels</li>
+                                    <li>Sell your videos worldwide</li>
+                                </ul>
+                                <a href="" class="btn-primary dpk-hover" data-hover-class="noCursor">Meer informatie</a>
+                            </div>    
+                        </div>
+                        <div class="accImg">
+                            <img src="media/img-2.jpg" alt="" width="665" height="212" class="w-100 h-100 object-cover">
+                        </div>
+                    </div>
+                </div> 
+                
+                <div class="accSlot" ser-slot="5">
+                    <div class="accItem ser-grid-item">
+                        <div class="itemInner">
+                            <button class="pluseButton"></button>
+                            <h3>Cloud management</h3>
+                            <div class="accInfo formatedUl">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ul laboris quip ex ea commodo consequat. </p>
+                                <ul>
+                                    <li>Showcase and embed your work</li>
+                                    <li>Publish across social channels</li>
+                                    <li>Sell your videos worldwide</li>
+                                </ul>
+                                <a href="" class="btn-primary dpk-hover" data-hover-class="noCursor">Meer informatie</a>
+                            </div>    
+                        </div>
+                        <div class="accImg">
+                            <img src="media/img-2.jpg" alt="" width="665" height="212" class="w-100 h-100 object-cover">
+                        </div>
+                    </div>
+                </div>                 
+
+            </div>
+
+        </section>
+        <!-- Accordian section end -->
+
+        <!-- Project section start -->
+        <section class="proSec sectionPin" data-scroll>            
+            <div class="projectContainer pin-wrap">
+
+                <div class="projectDiv dpk-hover" data-hover-class="orangeWithtext" data-hover-text="Bekijk <br> project">
+                    <a href="" class="absoLink"></a>
+                    <img src="media/project-1.jpg" alt="" class="w-100 h-100 object-cover">
+                    <div class="projectContent px-40 text-white">
+                        <h2>Lange naam van de klant</h2>
+                        <div class="row row-cols-2 align-items-center">
+                            <div class="col">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-end gap-rc-20 flex-wrap">
+                                <span class="btn-trans-gray">architectuur</span>
+                                <span class="btn-trans-gray">projectmanagement</span>
+                                <span class="btn-trans-gray">cloudmanagement</span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="projectDiv dpk-hover" data-hover-class="orangeWithtext" data-hover-text="Bekijk <br> project">
+                    <a href="" class="absoLink"></a>
+                    <img src="media/project-1.jpg" alt="" class="w-100 h-100 object-cover">
+                    <div class="projectContent px-40 text-white">
+                        <h2>Lange naam van de klant</h2>
+                        <div class="row row-cols-2 align-items-center">
+                            <div class="col">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-end gap-rc-20 flex-wrap">
+                                <span class="btn-trans-gray">architectuur</span>
+                                <span class="btn-trans-gray">projectmanagement</span>
+                                <span class="btn-trans-gray">cloudmanagement</span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>   
+                
+                <div class="projectDiv dpk-hover" data-hover-class="orangeWithtext" data-hover-text="Bekijk <br> project">
+                    <a href="" class="absoLink"></a>
+                    <img src="media/project-1.jpg" alt="" class="w-100 h-100 object-cover">
+                    <div class="projectContent px-40 text-white">
+                        <h2>Lange naam van de klant</h2>
+                        <div class="row row-cols-2 align-items-center">
+                            <div class="col">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            </div>
+                            <div class="col d-flex align-items-center justify-content-end gap-rc-20 flex-wrap">
+                                <span class="btn-trans-gray">architectuur</span>
+                                <span class="btn-trans-gray">projectmanagement</span>
+                                <span class="btn-trans-gray">cloudmanagement</span>
+                            </div>
+                        </div>                        
+                    </div>
+                </div> 
+                                
+                <div class="seeMore dpk-hover" data-hover-bg="#EE5A24">
+                    <h2>Meer zien?</h2>
+                    <a href="" class="btn-secondary dpk-hover" data-hover-class="noCursor">
+                        <span>Alle projecten</span><i></i>
+                    </a>
+                </div>
+
+            </div>            
+        </section>
+        <!-- Project section end -->
+
+
+        <!-- Logo section start -->
+        <section class="logoSection px-40 dpk-hover" data-scroll>
+
+            <div class="position-relative">            
+                <div class="borderShap border-gary bhsapDown"></div>
+                <div class="intro text-center text-secondary">Wij werken onder andere met:</div>
+
+                <ol class="displayedLogo">
+                    <li><span><img src="media/dot-net.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/php.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/bootstrep.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/laravl.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/umbraco.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/flutter.jpg" alt="" width="" height=""></span></li>
+                </ol>
+
+                <ul class="all-logos d-none">
+                    <li><span><img src="media/dot-net.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/php.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/bootstrep.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/laravl.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/umbraco.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/flutter.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/android.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/ios.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/vue.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/react.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/azure.jpg" alt="" width="" height=""></span></li>
+                    <li><span><img src="media/aws.jpg" alt="" width="" height=""></span></li>                    
+                </ul>                
+
+
+
+            </div>    
+
+        </section>
+        <!-- Logo section end -->
+
+        <!-- Update section start -->
+        <section class="updateSec px-40 dpk-hover" id="updateSec" data-scroll>
+
+            <div class="outTitlediv">
+                <div class="outlineTitle"
+                data-scroll data-scroll-direction="horizontal" 
+                data-scroll-speed="2" 
+                data-scroll-target="#updateSec" 
+                data-scroll-delay="0.05" 
+                data-scroll-position="150"                
+                >Updates</div>
+            </div>    
+
+            <div class="row row-30 row-cols-1 row-cols-md-3">
+                
+                <div class="col">
+                    <div class="updateBox">
+                        <a href="" class="position-absolute start-0 top-0 w-100 h-100"></a>
+                        <div class="updateImg">
+                            <img src="media/update-1.jpg" alt="" width="433" height="290" class="w-100 h-100 object-cover position-absolute start-0 top-0">                            
+                        </div>
+                        <div class="updatecontent">
+                            <h3>Dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna</h3>
+                            <p>12 januari</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="updateBox">
+                        <a href="" class="position-absolute start-0 top-0 w-100 h-100"></a>
+                        <div class="updateImg">
+                            <img src="media/update-2.jpg" alt="" width="433" height="290" class="w-100 h-100 object-cover position-absolute start-0 top-0">                            
+                        </div>
+                        <div class="updatecontent">
+                            <h3>Lorem ipsum dolor sit Dolor sit amet, consectetur adipiscing elit, tempor incididunt ut labore et dolore magna</h3>
+                            <p>12 januari</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="updateBox">
+                        <a href="" class="position-absolute start-0 top-0 w-100 h-100"></a>
+                        <div class="updateImg">
+                            <img src="media/update-1.jpg" alt="" width="433" height="290" class="w-100 h-100 object-cover position-absolute start-0 top-0">                            
+                        </div>
+                        <div class="updatecontent">
+                            <h3>Tempor incididunt ut labore et dolore magna</h3>
+                            <p>12 januari</p>
+                        </div>
+                    </div>
+                </div>                
+
+            </div>
+
+        </section>
+        <!-- Update section end -->
+
+        <!-- Contact animation section start -->
+        <section class="contactSec px-40 dpk-hover" data-scroll>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="scrollAnimate mb-45px">Waar ben je naar op zoek? consectetur adipiscing elit. Mauris erat nunc aliquet at nunc at hendrerit viverra neque.</h2>
+                </div>
+            </div>
+
+            <div class="columnBoxwrapper position-relative">
+                <div class="borderShap border-gary"></div>
+
+                <div class="d-flex flex-wrap fcolunnWrapper">
+                    <!-- Ik wil kennismaken start -->
+                    <div class="columnMain d-flex">
+                        <!-- Person detail div start -->
+                        <div class="pdLeft">
+                            <h3>Ik wil kennismaken</h3>
+                            <h4 class="text-secondary">Dan bel je Colin</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <button class="btn-secondary expandDiv dpk-hover" data-hover-class="noCursor">
+                                <span>Volgende</span>
+                                <i></i>
+                            </button>                        
+                        </div>  
+                        <!-- Person detail div end -->  
+                        <!-- Person image with description detail div start -->                        
+                        <div class="pdWrapper dpk-hover" data-hover-class="mix-blend-none">                            
+                            <div class="personDetail d-flex align-items-center text-white">
+                                <div class="custImg">
+                                    <img src="media/colin-transparent.png" alt="" width="390" height="360" class="w-100 h-100 object-cover">
+                                </div>
+                                <div>
+                                    <h2>Colin Robaard</h2>
+                                    <div class="d-flex align-items-center mb-9px">
+                                        <i class="wh-24 callIcon me-9px"></i>
+                                        <a href="tel:0612345678" rel="nofollow">06 12 34 56 78 </a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="wh-24 emailIcon me-9px"></i>
+                                        <a href="mailto:colin@devrepublic.nl" rel="nofollow">colin@devrepublic.nl</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                        </div>    
+                        <!-- Person image with description detail div end -->
+                    </div>
+                    <!-- Ik wil kennismaken end -->
+
+                    <!-- Ik wil een demomeeting start -->
+                    <div class="columnMain d-flex">
+                        <!-- Person detail div start -->
+                        <div class="pdLeft">
+                            <h3>Ik wil een demomeeting</h3>
+                            <h4 class="text-secondary">Dan bel je Colin</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <button class="btn-secondary expandDiv dpk-hover" data-hover-class="noCursor">
+                                <span>Volgende</span>
+                                <i></i>
+                            </button>                        
+                        </div>  
+                        <!-- Person detail div end -->  
+                        <!-- Person image with description detail div start -->                        
+                        <div class="pdWrapper dpk-hover" data-hover-class="mix-blend-none">
+
+                            <div class="personDetail d-flex align-items-center text-white">
+                                <div class="custImg">
+                                    <img src="media/colin-transparent.png" alt="" width="390" height="360" class="w-100 h-100 object-cover">
+                                </div>
+                                <div>
+                                    <h2>Colin Robaard</h2>
+                                    <div class="d-flex align-items-center mb-9px">
+                                        <i class="wh-24 callIcon me-9px"></i>
+                                        <a href="tel:0612345678" rel="nofollow">06 12 34 56 78 </a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="wh-24 emailIcon me-9px"></i>
+                                        <a href="mailto:colin@devrepublic.nl" rel="nofollow">colin@devrepublic.nl</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                        </div>    
+                        <!-- Person image with description detail div end -->
+                    </div>
+                    <!-- Ik wil een demomeeting end -->
+                    
+                    <!-- Ik wil werken bij DevRepublic start -->
+                    <div class="columnMain d-flex">
+                        <!-- Person detail div start -->
+                        <div class="pdLeft">
+                            <h3>Ik wil werken bij DevRepublic</h3>
+                            <h4 class="text-secondary">Dan bel je Colin</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <button class="btn-secondary expandDiv dpk-hover" data-hover-class="noCursor">
+                                <span>Volgende</span>
+                                <i></i>
+                            </button>                        
+                        </div>  
+                        <!-- Person detail div end -->  
+                        <!-- Person image with description detail div start -->                        
+                        <div class="pdWrapper dpk-hover" data-hover-class="mix-blend-none">
+
+                            <div class="personDetail d-flex align-items-center text-white">
+                                <div class="custImg">
+                                    <img src="media/colin-transparent.png" alt="" width="390" height="360" class="w-100 h-100 object-cover">
+                                </div>
+                                <div>
+                                    <h2>Colin Robaard</h2>
+                                    <div class="d-flex align-items-center mb-9px">
+                                        <i class="wh-24 callIcon me-9px"></i>
+                                        <a href="tel:0612345678" rel="nofollow">06 12 34 56 78 </a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="wh-24 emailIcon me-9px"></i>
+                                        <a href="mailto:colin@devrepublic.nl" rel="nofollow">colin@devrepublic.nl</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                        </div>    
+                        <!-- Person image with description detail div end -->
+                    </div>
+                    <!-- Ik wil werken bij DevRepublic end -->
+
+                    <!-- Ik heb een andere vraag start -->
+                    <div class="columnMain d-flex">
+                        <!-- Person detail div start -->
+                        <div class="pdLeft">
+                            <h3>Ik heb een andere vraag</h3>
+                            <h4 class="text-secondary">Dan bel je Colin</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <button class="btn-secondary expandDiv dpk-hover" data-hover-class="noCursor">
+                                <span>Volgende</span>
+                                <i></i>
+                            </button>                        
+                        </div>  
+                        <!-- Person detail div end -->  
+                        <!-- Person image with description detail div start -->                        
+                        <div class="pdWrapper dpk-hover" data-hover-class="mix-blend-none">
+
+                            <div class="personDetail d-flex align-items-center text-white">
+                                <div class="custImg">
+                                    <img src="media/colin-transparent.png" alt="" width="390" height="360" class="w-100 h-100 object-cover">
+                                </div>
+                                <div>
+                                    <h2>Colin Robaard</h2>
+                                    <div class="d-flex align-items-center mb-9px">
+                                        <i class="wh-24 callIcon me-9px"></i>
+                                        <a href="tel:0612345678" rel="nofollow">06 12 34 56 78 </a>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="wh-24 emailIcon me-9px"></i>
+                                        <a href="mailto:colin@devrepublic.nl" rel="nofollow">colin@devrepublic.nl</a>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                        </div>    
+                        <!-- Person image with description detail div end -->
+                    </div>
+                    <!-- Ik heb een andere vraag end -->                    
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Contact animation section end -->       
